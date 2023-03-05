@@ -61,7 +61,7 @@ function onSearch(evt) {
 }
 
 function weatherApi(city, days) {
-	const BASE_URL = "http://api.weatherapi.com/v1";
+	const BASE_URL = "https://api.weatherapi.com/v1";
 	const key = "3f3e75d6e5b54bf7a9d103959230403";
 	return fetch(
 		`${BASE_URL}/forecast.json?key=${key}&q=${city}&days=${days}`
